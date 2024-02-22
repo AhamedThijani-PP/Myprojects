@@ -1,6 +1,7 @@
 import streamlit as st
 st.title('Calculator App')
 st.write('------------------------------------------------')
+st.write('created by Thijani')
 n1=st.number_input(label='Enter the first number')
 n2=st.number_input(label='Enter the second number')
 op=st.radio('Select an operation to perform',('Add','Subtract','Multiply','Divide'))
