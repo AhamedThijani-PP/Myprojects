@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-df=pd.read_csv('https://github.com/ameenmanna8824/DATASETS/blob/main/IRIS.csv')
+df=pd.read_csv('IRIS.csv')
 x=df.iloc[:,0:4].values
 y=df.iloc[:,4].values
 x_train,x_test,y_train,y_test=train_test_split(x,y,random_state=0)
