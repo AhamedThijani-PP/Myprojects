@@ -93,7 +93,7 @@ def render_home():
     else:
         contract='3'
     paperless=st.selectbox('Is it Paperless Billing?', ['Yes','No'])
-    partner='1' if partner == 'Yes' else 0
+    paperless='1' if paperless == 'Yes' else 0
     paymentmethod=st.selectbox('Select the Payment Method', ['Electronic check','Mailed check','Bank Transfer(Automatic)','credit card'])
     if paymentmethod == 'One Year':
         paymentmethod = '1'
