@@ -20,7 +20,8 @@ def render_home():
     st.write('------------------------------------------------')
     gender = st.selectbox('Select Gender', ['Male', 'Female'])
     gender = '1' if gender == 'Male' else 0
-    seniorcitizen=st.selectbox('Are you Senior Citizen?(1 = Yes,0 = No)', ['1', '0'])
+    seniorcitizen=st.selectbox('Are you Senior Citizen?', ['Yes','No'])
+    seniorcitizen= '1' if gender == 'Yes' else 0
     partner=st.selectbox('Are you single?(1 = Yes,0 = No)', ['1', '0'])
     dependents=st.selectbox('Are you depended?(1 = Yes,0 = No)', ['1', '0'])
     tenure=st.slider('Select a tenure', 0, 1300, 50)
