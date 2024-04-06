@@ -38,7 +38,7 @@ def render_home():
     monthlycharges=st.number_input(label='Enter the monthly Charge')
     totalcharges=st.number_input(label='Enter the Total Charge')
     pred=model.predict([[gender,seniorcitizen,partner,dependents,tenure,phoneservice,multiplelines,internetservice,onlinesecurity,onlinebackup,deviceprotection,techsupport,streamingtv,streamingmovies,contract,paperless,paymentmethod,monthlycharges,totalcharges]])
-    if pred=='1':
+    if pred==1:
         pred='People are likely to churn'
     else:
         pred='People are not likely to churn'
