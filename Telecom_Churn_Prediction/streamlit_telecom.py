@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split as tts
 import pandas as pd
 import streamlit as st
 import joblib
-model=joblib.load(open('telecom_churn_prediction.pkl','rb'))
+model=joblib.load(open(,'rb'))
 st.title('Telecom Churn Prediction')
 st.write('------------------------------------------------')
 sepal_l=st.number_input(label='Enter the Sepal Length')
