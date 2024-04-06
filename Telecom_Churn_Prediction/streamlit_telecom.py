@@ -21,12 +21,15 @@ def render_home():
     gender = st.selectbox('Select Gender', ['Male', 'Female'])
     gender = '1' if gender == 'Male' else 0
     seniorcitizen=st.selectbox('Are you Senior Citizen?', ['Yes','No'])
-    seniorcitizen= '1' if gender == 'Yes' else 0
-    partner=st.selectbox('Are you single?(1 = Yes,0 = No)', ['1', '0'])
-    dependents=st.selectbox('Are you depended?(1 = Yes,0 = No)', ['1', '0'])
+    seniorcitizen= '1' if seniorcitizen == 'Yes' else 0
+    partner=st.selectbox('Are you single?', ['Yes','No'])
+    partner='1' if partner == 'Yes' else 0
+    dependents=st.selectbox('Are you depended?', ['Yes','No'])
+    dependents='1' if dependents == 'Yes' else 0
     tenure=st.slider('Select a tenure', 0, 1300, 50)
-    phoneservice=st.selectbox('Select the Phone Service(1 = Yes,0 = No)', ['1', '0'])
-    multiplelines=st.selectbox('Select the Phone Service(1 = Yes,0 = No,2=No phone sevice)', ['1', '0','2'])
+    phoneservice=st.selectbox('Select the Phone Service', ['Yes','No'])
+    phoneservice='1' if phoneservice == 'Yes' else 0
+    multiplelines=st.selectbox('Select the Phone Service(1 = Yes,0 = No,2=No phone sevice)', ['Yes','No','No PhoneService'])
     internetservice=st.selectbox('Select the Internet Service(1 = Fibre,0 = No,2=DSL)', ['1', '0','2'])
     onlinesecurity=st.selectbox('Select the Online Security(1 = Yes,0 = No,2=No Internet Service)', ['1', '0','2'])
     onlinebackup=st.selectbox('Select the Online Backup(1 = Yes,0 = No,2=No Internet sevice)', ['1', '0','2'])
