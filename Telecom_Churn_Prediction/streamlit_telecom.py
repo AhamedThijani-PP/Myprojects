@@ -29,7 +29,13 @@ def render_home():
     tenure=st.slider('Select a tenure', 0, 1300, 50)
     phoneservice=st.selectbox('Select the Phone Service', ['Yes','No'])
     phoneservice='1' if phoneservice == 'Yes' else 0
-    multiplelines=st.selectbox('Select the Phone Service(1 = Yes,0 = No,2=No phone sevice)', ['Yes','No','No PhoneService'])
+    multiplelines=st.selectbox('Select the Phone Service', ['Yes','No','No PhoneService'])
+    if phone_service == 'Yes':
+        phone_service = 1
+    elif phone_service == 'No':
+        phone_service = 0
+    else:
+        phone_service = 2
     internetservice=st.selectbox('Select the Internet Service(1 = Fibre,0 = No,2=DSL)', ['1', '0','2'])
     onlinesecurity=st.selectbox('Select the Online Security(1 = Yes,0 = No,2=No Internet Service)', ['1', '0','2'])
     onlinebackup=st.selectbox('Select the Online Backup(1 = Yes,0 = No,2=No Internet sevice)', ['1', '0','2'])
