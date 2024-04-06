@@ -19,7 +19,7 @@ def render_home():
     st.title('Telecom Churn Prediction')
     st.write('------------------------------------------------')
     gender = st.selectbox('Select Gender', ['Male', 'Female'])
-    gender_value = '1' if gender == 'Male' else 0
+    gender = '1' if gender == 'Male' else 0
     seniorcitizen=st.selectbox('Are you Senior Citizen?(1 = Yes,0 = No)', ['1', '0'])
     partner=st.selectbox('Are you single?(1 = Yes,0 = No)', ['1', '0'])
     dependents=st.selectbox('Are you depended?(1 = Yes,0 = No)', ['1', '0'])
