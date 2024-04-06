@@ -2,9 +2,10 @@ from sklearn.ensemble import RandomForestClassifier as RF
 from sklearn.model_selection import train_test_split as tts
 import pandas as pd
 import streamlit as st
+from pathlib import Path
+pkl_path = Path().parents[1]
 import joblib
-path='https://github.com/AhamedThijani-PP/Myprojects/blob/streamlit/Telecom_Churn_Prediction/telecom_churn_prediction.pkl'
-model=joblib.load(open(path,'rb'))
+model=joblib.load(open(Path,'rb'))
 st.title('Telecom Churn Prediction')
 st.write('------------------------------------------------')
 sepal_l=st.number_input(label='Enter the Sepal Length')
