@@ -42,7 +42,7 @@ def render_home():
         st.success(f'{pred}')
 def render_about():
     st.header('About Page')
-    st.write('This is the about page.')
+    st.write('It is an experimental prototype created by second year BCA Robotics students of Yenepoya. This model has good performance.It is still in the experimental phase.')
 
 def render_contact():
     st.header('Contact Page')
