@@ -19,6 +19,7 @@ def render_home():
     st.title('Telecom Churn Prediction')
     st.write('------------------------------------------------')
     gender=st.selectbox('Select Gender(1=Male,0=Female)', ['1', '0'])
+    gender_value = 1 if gender == 'Male' else 0
     seniorcitizen=st.selectbox('Are you Senior Citizen?(1 = Yes,0 = No)', ['1', '0'])
     partner=st.selectbox('Are you single?(1 = Yes,0 = No)', ['1', '0'])
     dependents=st.selectbox('Are you depended?(1 = Yes,0 = No)', ['1', '0'])
@@ -34,7 +35,7 @@ def render_home():
     streamingmovies=st.selectbox('Select the StreamingMovies(1 = Yes,0 = No,2=No Internet sevice)', ['1', '0','2'])
     contract=st.selectbox('Select the contract(1 = One Year,2= Two Year,3=Month to Month)', ['1', '2','3'])
     paperless=st.selectbox('Is it Paperless Billing?(1 = Yes,0 = No)', ['1', '0'])
-    paymentmethod=st.selectbox('Select the Payment Method(1 = Mailed check,0 = Electronic check,2=Bank Transfer(Automatic),3=credit card', ['1', '0','2'])
+    paymentmethod=st.selectbox('Select the Payment Method(1 = Mailed check,0 = Electronic check,2=Bank Transfer(Automatic),3=credit card', ['1', '0','2','3'])
     monthlycharges=st.number_input(label='Enter the monthly Charge')
     totalcharges=st.number_input(label='Enter the Total Charge')
     pred=model.predict([[gender,seniorcitizen,partner,dependents,tenure,phoneservice,multiplelines,internetservice,onlinesecurity,onlinebackup,deviceprotection,techsupport,streamingtv,streamingmovies,contract,paperless,paymentmethod,monthlycharges,totalcharges]])
