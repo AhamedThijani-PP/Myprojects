@@ -7,7 +7,7 @@ import joblib
 model=joblib.load(open(Path,'rb'))
 st.title('Telecom Churn Prediction')
 st.write('------------------------------------------------')
-gender=st.number_input(label='Enter the Sepal Length')
+gender=st.selectbox('Select Gender', ['Male', 'Female'])
 sepal_w=st.number_input(label='Enter the Sepal Width')
 petal_l=st.number_input(label='Enter the Petal Length')
 petal_w=st.number_input(label='Enter the Petal Width')
