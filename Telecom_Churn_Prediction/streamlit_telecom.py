@@ -2,8 +2,7 @@ from sklearn.ensemble import RandomForestClassifier as RF
 from sklearn.model_selection import train_test_split as tts
 import pandas as pd
 import streamlit as st
-from pathlib import Path
-pkl_path = Path('Telecom_Churn_Prediction/telecom_churn_prediction.pkl').parents[1]
+Path='Telecom_Churn_Prediction/telecom_churn_prediction.pkl'
 import joblib
 model=joblib.load(open(Path,'rb'))
 st.title('Telecom Churn Prediction')
