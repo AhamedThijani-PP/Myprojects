@@ -4,6 +4,7 @@ import pandas as pd
 import streamlit as st
 import joblib
 def main():
+    st.set_page_config(page_icon=None, layout="centered", initial_sidebar_state="auto")
     page = st.sidebar.selectbox('Select a page', ['Home', 'About', 'Contact'])
     if page == 'Home':
         render_home()
