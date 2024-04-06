@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split as tts
 import pandas as pd
 import streamlit as st
 from pathlib import Path
-pkl_path = Path().parents[1]
+pkl_path = Path('https://github.com/AhamedThijani-PP/Myprojects/blob/streamlit/Telecom_Churn_Prediction/telecom_churn_prediction.pkl').parents[1]
 import joblib
 model=joblib.load(open(Path,'rb'))
 st.title('Telecom Churn Prediction')
