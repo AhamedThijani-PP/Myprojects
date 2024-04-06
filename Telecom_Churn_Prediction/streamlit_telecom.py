@@ -29,7 +29,7 @@ def render_home():
     tenure=st.slider('Select a tenure', 0, 1300, 5)
     phoneservice=st.selectbox('Select the Phone Service', ['Yes','No'])
     phoneservice='1' if phoneservice == 'Yes' else 0
-    multiplelines=st.selectbox('Select the Phone Service', ['Yes','No','No PhoneService'])
+    multiplelines=st.selectbox('Select the Multiple Lines', ['Yes','No','No PhoneService'])
     if multiplelines == 'Yes':
         multiplelines = '1'
     elif multiplelines == 'No':
