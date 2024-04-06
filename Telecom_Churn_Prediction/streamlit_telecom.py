@@ -30,12 +30,12 @@ def render_home():
     phoneservice=st.selectbox('Select the Phone Service', ['Yes','No'])
     phoneservice='1' if phoneservice == 'Yes' else 0
     multiplelines=st.selectbox('Select the Phone Service', ['Yes','No','No PhoneService'])
-    if phoneservice == 'Yes':
-        phoneservice = 1
-    elif phoneservice == 'No':
-        phoneservice = 0
+    if multiplelines == 'Yes':
+        multiplelines = 1
+    elif multiplelines == 'No':
+        multiplelines = 0
     else:
-        phoneservice = 2
+        multiplelines = 2
     internetservice=st.selectbox('Select the Internet Service(1 = Fibre,0 = No,2=DSL)', ['1', '0','2'])
     onlinesecurity=st.selectbox('Select the Online Security(1 = Yes,0 = No,2=No Internet Service)', ['1', '0','2'])
     onlinebackup=st.selectbox('Select the Online Backup(1 = Yes,0 = No,2=No Internet sevice)', ['1', '0','2'])
