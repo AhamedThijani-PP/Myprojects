@@ -38,8 +38,12 @@ def render_home():
     monthlycharges=st.number_input(label='Enter the monthly Charge')
     totalcharges=st.number_input(label='Enter the Total Charge')
     pred=model.predict([[gender,seniorcitizen,partner,dependents,tenure,phoneservice,multiplelines,internetservice,onlinesecurity,onlinebackup,deviceprotection,techsupport,streamingtv,streamingmovies,contract,paperless,paymentmethod,monthlycharges,totalcharges]])
+    if pred=='1':
+        pred='People are likely to churn'
+    else:
+        pred='People are not likely to churn'
     if st.button('Predict Result'):
-        st.success(f'{pred}')
+        st.success(pred)
 def render_about():
     st.header('About Page')
     st.write('It is an experimental prototype created by second year BCA Robotics students of Yenepoya. This model has good performance.It is still in the experimental phase.')
