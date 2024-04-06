@@ -46,7 +46,7 @@ def render_about():
 
 def render_contact():
     st.header('Contact Page')
-    st.write('You can contact us at example@example.com')
+    st.write('If you have any concern, don't hesitate to contact us ahamedthijanipp@gmail.com')
 
 if __name__ == "__main__":
     main()
