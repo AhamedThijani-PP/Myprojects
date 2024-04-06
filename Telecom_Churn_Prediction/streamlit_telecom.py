@@ -99,7 +99,7 @@ def render_home():
         paymentmethod = '1'
     elif paymentmethod == 'Two Year':
         paymentmethod = '2'
-    elif paymentmethod='Bank Transfer(Automatic)':
+    elif paymentmethod=='Bank Transfer(Automatic)':
         paymentmethod='3'
     else:
         paymentmethod='4'
