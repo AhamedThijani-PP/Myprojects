@@ -7,7 +7,7 @@ import joblib
 model=joblib.load(open(Path,'rb'))
 st.title('Telecom Churn Prediction')
 st.write('------------------------------------------------')
-gender=st.selectbox('Select Gender', ['Male', 'Female'])
+gender=st.selectbox('Select Gender(1=Male,0=Female)', ['1', '0'])
 seniorcitizen=st.selectbox('Are you Senior Citizen?(1 = Yes,0 = No)', ['1', '0'])
 partner=st.selectbox('Are you single?(1 = Yes,0 = No)', ['1', '0'])
 dependents=st.selectbox('Are you depended?(1 = Yes,0 = No)', ['1', '0'])
