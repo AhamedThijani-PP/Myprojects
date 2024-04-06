@@ -26,7 +26,7 @@ def render_home():
     partner='1' if partner == 'Yes' else 0
     dependents=st.selectbox('Are you depended?', ['Yes','No'])
     dependents='1' if dependents == 'Yes' else 0
-    tenure=st.slider('Select a tenure', 0, 1300, 50)
+    tenure=st.slider('Select a tenure', 0, 1300, 5)
     phoneservice=st.selectbox('Select the Phone Service', ['Yes','No'])
     phoneservice='1' if phoneservice == 'Yes' else 0
     multiplelines=st.selectbox('Select the Phone Service', ['Yes','No','No PhoneService'])
