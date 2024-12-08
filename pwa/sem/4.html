@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: yellow;
+        }
+        h2{
+            color: red;
+            padding-left: 35px;
+        }
+        ol{
+            list-style: none;
+        }
+        ol.custom-index > li::before{
+            content: attr(data-index);
+            margin-right: 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia and Web Technology Course Contents</title>
+</head>
+<body>
+    <h2>Multimedia and Web Technology Course Contents</h2>
+    <ol class="custom-index">
+        <li data-index="C.">Markup Language</li>
+        <li data-index="F.">Scripting Language</li>
+        <li data-index="G.">Multimedia Packages</li>
+    </ol>
+</body>
+</html>
